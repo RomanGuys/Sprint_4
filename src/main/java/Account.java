@@ -10,10 +10,7 @@ public class Account {
         if (name.length() < 3 || name.length() > 19){
             return false;
         }
-        if (name.contains(" ") && !name.startsWith(" ") && !name.endsWith(" ")) {
-                return true;
-            }
-        else return false;
+        return name.contains(" ") && !name.startsWith(" ") && !name.endsWith(" ");
         }
     }
 
